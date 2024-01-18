@@ -5,6 +5,7 @@ using UnityEngine;
 public class Launcher : MonoBehaviour
 {
     public GameObject launcher;
+    public Transform laucherTransform;
     // Start is called before the first frame update
     void Start()
     {
@@ -12,13 +13,10 @@ public class Launcher : MonoBehaviour
     }
 
 
-
- 
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Launch");
-        GameObject newObject = Instantiate(launcher);
+        GameObject newObject = Instantiate(launcher, laucherTransform.position, laucherTransform.rotation);
     }
 
     // Update is called once per frame
