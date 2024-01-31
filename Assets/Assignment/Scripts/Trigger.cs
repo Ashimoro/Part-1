@@ -6,7 +6,6 @@ public class Trigger : MonoBehaviour
 {
     public GameObject arrow1;
     public GameObject arrow2;
-    public GameObject arrow3;
     public GameObject gate;
 
     void Start()
@@ -18,7 +17,6 @@ public class Trigger : MonoBehaviour
     {
         arrow1.SetActive(false);
         arrow2.SetActive(true);
-        arrow3.SetActive(true);
         gate.SetActive(false);
     }
     void Update()

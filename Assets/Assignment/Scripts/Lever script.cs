@@ -5,8 +5,8 @@ using UnityEngine;
 public class Leverscript : MonoBehaviour
 {
     public GameObject gate;
-    public GameObject arrow;
     public GameObject lever;
+    public GameObject prefab_arrow;
     void Start()
     {
         
@@ -15,8 +15,9 @@ public class Leverscript : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         gate.SetActive(false);
-        arrow.SetActive(false);
+        GameObject.Destroy(prefab_arrow);
         lever.transform.Rotate(0, 0, -80);
+        
     }
     void Update()
     {
