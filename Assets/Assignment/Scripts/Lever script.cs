@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class Leverscript : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject gate;
+    public GameObject arrow;
+    public GameObject lever;
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        gate.SetActive(false);
+        arrow.SetActive(false);
+        lever.transform.Rotate(0, 0, -80);
+    }
     void Update()
     {
         
