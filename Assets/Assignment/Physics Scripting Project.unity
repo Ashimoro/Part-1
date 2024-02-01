@@ -1268,6 +1268,7 @@ MonoBehaviour:
   gate: {fileID: 2147245209}
   lever: {fileID: 1984416465}
   prefab_arrow: {fileID: 583221196}
+  prefab: {fileID: 3355168754256800069, guid: c79788b266b885441939fbc6c7040423, type: 3}
 --- !u!50 &1775582674
 Rigidbody2D:
   serializedVersion: 4
@@ -1865,6 +1866,10 @@ PrefabInstance:
     - target: {fileID: 3355168754256800069, guid: c79788b266b885441939fbc6c7040423, type: 3}
       propertyPath: m_Name
       value: arrow1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3355168754256800069, guid: c79788b266b885441939fbc6c7040423, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
