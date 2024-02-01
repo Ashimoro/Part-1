@@ -7,6 +7,7 @@ public class Leverscript : MonoBehaviour
     public GameObject gate;
     public GameObject lever;
     public GameObject prefab_arrow;
+    public GameObject prefab;
     void Start()
     {
         
@@ -17,6 +18,7 @@ public class Leverscript : MonoBehaviour
         gate.SetActive(false);
         GameObject.Destroy(prefab_arrow);
         lever.transform.Rotate(0, 0, -80);
+        GameObject newObject = Instantiate(prefab);
         
     }
     void Update()
